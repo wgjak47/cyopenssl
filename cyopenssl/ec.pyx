@@ -100,7 +100,7 @@ cdef extern from "openssl/ecdsa.h" nogil:
     int ECDSA_SIG_set0(ECDSA_SIG *sig, BIGNUM *r, BIGNUM *s)
 
 
-from  evp_h cimport *
+from  cyopenssl.evp_h cimport *
 
 
 cdef extern from "openssl/err.h":

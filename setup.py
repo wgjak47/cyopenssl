@@ -1,4 +1,4 @@
-from distutils.core import setup, Extension
+from setuptools import setup, Extension
 from Cython.Build import cythonize
 import platform
 import os
@@ -46,8 +46,8 @@ def make_extension(name, sources):
 
 
 extensions = [
-    make_extension('openssl', ['cyopenssl/openssl.pyx']),
-    make_extension('ec', ['cyopenssl/ec.pyx']),
+    #make_extension('openssl', ['cyopenssl/openssl.pyx']),
+    #make_extension('ec', ['cyopenssl/ec.pyx']),
     make_extension('rsa', ['cyopenssl/rsa.pyx'])]
 
 

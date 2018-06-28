@@ -8,4 +8,4 @@ if platform.system() == "Windows":
     ctypes.CDLL(RESOURCE_DIR + '/libeay32.dll')
     ctypes.CDLL(RESOURCE_DIR + '/ssleay32.dll')
 
-from openssl import *
+import rsa

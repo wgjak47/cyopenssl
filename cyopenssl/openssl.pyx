@@ -2,7 +2,7 @@ from libc cimport string
 from libc.stdio cimport printf
 
 
-from evp_h cimport *
+from cyopenssl.evp_h cimport *
 
 
 cdef extern from "openssl/pkcs7.h" nogil:
